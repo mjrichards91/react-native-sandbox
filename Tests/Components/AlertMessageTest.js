@@ -17,3 +17,7 @@ test('AlertMessage component renders correctly if backgroundColor prop is set', 
   const tree = renderer.create(<AlertMessage title='howdy' style={{backgroundColor: 'red'}} />).toJSON()
   expect(tree).toMatchSnapshot()
 })
+
+test('This test should fail in the build pipeline', () => {
+  expect(false).toBeTruthy();
+});
